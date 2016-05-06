@@ -1,0 +1,312 @@
+#wrapper{
+	height:768px;
+	width: 991px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+#nav-info{
+	width: 20%;
+	justify-content: center;
+}
+
+nav{
+	color: #60beae;
+}
+
+nav > ul > li{
+	list-style-type: none;
+}
+
+.icon{
+		width: 100px;
+		margin-bottom: 10px;
+	}
+
+#nav-info > ul{
+	padding: 0;
+	color: #60beae;
+	list-style-type: none;
+}
+
+#nav-info > ul > li{
+	font-size: 2rem;
+	text-align: left;
+	margin-bottom: 18px;
+	list-style-type: none;
+}
+
+#main{
+		width: 80%;
+	}
+
+.pic{
+	position: relative;
+	width: inherit;
+	background: url('../discuss.jpg');
+	background-size: cover;
+	height: 445px;
+}
+
+.title-box{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	width: 600px;
+	bottom: 80px;
+	right: 0;
+	font-size: 2.2rem;
+}
+
+#titleA{
+	background-color: #FFFFFF;
+	width: 200px;
+	color: #000000;
+	text-align: center;
+	padding: 15px;
+}
+
+#titleB{
+	width: 100%;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 2.2rem;
+	text-align: center;
+	padding: 15px;
+}
+
+#nd-nav{
+	display: flex;
+}
+
+.option{
+	width: 25%;
+	background-color: #eff8f7;
+	color: #60beae;
+	padding: 10px 0;
+	border-right: #d9efec 1px solid; 
+}
+
+.option h3{
+	font-size: 2rem;
+}
+
+.option p{
+	font-size: 1rem;
+}
+
+.option:last-of-type{
+	border-width: 0; 
+}
+
+#archives{
+	display: flex;
+}
+
+.arti-with-pic{
+	width: 25%;
+	margin: 10px;
+	}
+
+.arti-with-pic  > .title{
+	font-size: 1.8rem;
+	color: #60beae;
+}
+
+.arti-with-pic > .img{
+	width: 100%;
+}
+
+.arti-with-pic > .img > img{
+	width: inherit;
+}
+
+/*style3*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+	#wrapper{
+		width: 768px;
+		padding-top: 30px;
+	}
+
+	#nav-info{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	nav > ul > li{
+		list-style-type: none;
+		display: inline;
+	}
+
+	aside{
+		display: none;
+	}
+
+	aside > h5{
+		text-transform: uppercase;
+		font-size: 1rem;
+	}
+
+	aside > p{
+		font-size: 0.8rem;
+		margin-right: 100px;
+	}
+
+	#main{
+		width: 100%;
+	}
+
+}
+
+/*style2*/
+@media screen and (min-width: 480px) and (max-width: 768px){
+
+	#main{
+		width: 480px;
+		position: absolute;
+		top: 100px;
+		left: 15%;
+	}
+
+	#wrapper{
+		top: 50%;
+		padding-top: 20px;
+	}
+
+	.icon{
+		width: 60px;
+	}
+
+	#nav-info{
+		margin-left: 10%;
+	}
+
+	img{
+		width: 60px;
+	}
+
+	nav{
+		position: absolute;
+		top: 25px;
+		left: 25%;
+	}
+
+	nav > ul > li{
+		list-style-type: none;
+		display: inline;
+		margin: 0 10px;
+	}
+
+	aside{
+		display: none;
+	}
+
+	.pic{
+		height: 248px;
+	}
+
+	.title-box{
+		width: 480px;
+	}
+
+	.titleA{
+		width: 100%;
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	.titleB{
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	.option{
+		display: none;
+	}
+
+	#archives{
+		flex-wrap: wrap;
+		margin-top: 20px;
+	}
+
+	.arti-with-pic{
+		width: 40%;
+		padding: 20px 5px;
+	}
+}
+
+/*style1*/
+@media screen and (max-width: 480px){
+
+	#wrapper{
+		width: 350px;
+		padding-top: 10px;
+	}
+
+	#main{
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	#nav-info{
+		position: relative;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+
+	nav{
+		width: 100%;
+		font-size: 1.4rem;
+	}
+
+	nav > ul > li{
+		list-style-type: none;
+		display: inline;
+	}
+
+	.icon{
+		position: absolute;
+		top: 30px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+
+	#nav-info > ul > li{
+		display: inline;
+		font-size: 1.4rem;
+		padding-left: 0;
+		margin-left: 10px;
+	}
+
+	.pic{
+		height: 250px;
+	}
+
+	aside, #nd-nav{
+		display: none;
+	}
+
+	#archives{
+		display: inline;
+	}
+	.title-box{
+		position: absolute;
+		width: 350px;
+		bottom: -20px;
+		right: 0;
+		font-size: 1rem;
+	}
+
+	.arti-with-pic{
+		width: 95%;
+		padding: 20px 0;
+	}
+
+}
